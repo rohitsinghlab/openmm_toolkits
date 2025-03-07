@@ -1,9 +1,4 @@
 Required packages (and versions):
-1. openmm=8.2 => pip install openmm=8.2 cudatoolkit=11.8 (need to install openmm with cuda support)
-2. openff (for forcefield and GAFF)
-3. rdkit
-4. openmmtools (use the PIP version)
-
 1. Install openmm using the following command:
     
     ```python
