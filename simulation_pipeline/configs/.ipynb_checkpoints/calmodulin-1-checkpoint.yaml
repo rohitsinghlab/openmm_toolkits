@@ -1,0 +1,21 @@
+# no iterations
+n_iterations: 10
+n_steps_per_iterations: 100
+min_energy_iterations: 1000
+output_save_freq: 2
+
+# other constraints
+friction_coeff: 1.0
+temperature_kelvin: 300.0
+n_lambda_states: 11
+pressure_bar: 1.0
+timestep_femtoseconds: 2.0
+
+# inputs
+device: CUDA
+protein_pdb: calmodulin/pdbs/protein.pdb
+fix_protein_pdb: True
+fixed_protein_pdb: calmodulin/pdbs/protein_fixed_1.pdb
+ligand_sdf: calmodulin/pdbs/ligand.sdf
+outputfld: calmodulin_dir
+tsv_out: free_energy_results.tsv

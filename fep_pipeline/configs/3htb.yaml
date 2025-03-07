@@ -1,0 +1,27 @@
+defaults:
+    - settings: vcoarse
+    - _self_
+
+n_iterations: ${settings.n_iterations} 
+n_steps_per_iterations: ${settings.n_steps_per_iterations} 
+min_energy_iterations: ${settings.min_energy_iterations} 
+output_save_freq: ${settings.output_save_freq} 
+
+# other constraints
+friction_coeff: ${settings.friction_coeff}
+temperature_kelvin: ${settings.temperature_kelvin}
+n_lambda_states: ${settings.n_lambda_states}
+pressure_bar: ${settings.pressure_bar}
+timestep_femtoseconds: ${settings.timestep_femtoseconds}
+
+# inputs
+base_fld: protein-ligand-data/3HTB
+device: CUDA
+protein_pdb: ${base_fld}/protein.pdb
+fix_protein_pdb: True
+fixed_protein_pdb: ${base_fld}/protein_fixed.pdb
+save_solvated_pdb: ${base_fld}/solvated_complex.pdb
+ligand_sdfs: 
+    - ${base_fld}/JZ4.sdf
+outputfld: ${base_fld}/simulation-results-full
+tsv_out: ${base_fld}/free_energy_results.tsv

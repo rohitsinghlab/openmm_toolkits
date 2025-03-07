@@ -1,0 +1,11 @@
+n_iterations: 500  # Increased from 50 for better statistics
+n_steps_per_iterations: 50000  # Decreased from 10000, still adequate
+min_energy_iterations: 3000  # Reduced from 5000, sufficient for most systems
+output_save_freq: 10  # Save less frequently to reduce I/O overhead
+
+# other constraints
+friction_coeff: 5.0
+temperature_kelvin: 300.0
+n_lambda_states: 21
+pressure_bar: 1.0
+timestep_femtoseconds: 2.0 ## with hydrogen mass repartitioning we can do 4 femtoseconds

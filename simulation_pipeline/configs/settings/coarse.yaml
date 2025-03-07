@@ -1,0 +1,6 @@
+n_steps: 100000
+
+# other constraints
+friction_coeff: 1.0
+temperature_kelvin: 300.0
+timestep_femtoseconds: 1.0

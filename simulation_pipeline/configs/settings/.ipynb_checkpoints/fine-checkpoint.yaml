@@ -1,0 +1,11 @@
+n_iterations: 250  # Increased from 50 for better statistics
+n_steps_per_iterations: 2000  # Decreased from 10000, still adequate
+min_energy_iterations: 1000  # Reduced from 5000, sufficient for most systems
+output_save_freq: 10  # Save less frequently to reduce I/O overhead
+
+# other constraints
+friction_coeff: 1.0
+temperature_kelvin: 300.0
+n_lambda_states: 15
+pressure_bar: 1.0
+timestep_femtoseconds: 1.0

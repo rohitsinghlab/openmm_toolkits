@@ -1,0 +1,23 @@
+# no iterations
+n_iterations: 10
+n_steps_per_iterations: 100
+min_energy_iterations: 50
+output_save_freq: 2
+
+# other constraints
+friction_coeff: 2.0
+temperature_kelvin: 300.0
+n_lambda_states: 11
+pressure_bar: 1.0
+timestep_femtoseconds: 0.50
+
+# inputs
+device: CUDA
+protein_pdb: protein-ligand-data/1031/protein.pdb
+fix_protein_pdb: True
+fixed_protein_pdb: protein-ligand-data/1031/protein_fixed.pdb
+ligand_sdfs: 
+    - protein-ligand-data/1031/BME.sdf
+    - protein-ligand-data/1031/CL.sdf
+outputfld: protein-ligand-data/1031/simulation-results
+tsv_out: protein-ligand-data/1031/free_energy_results.tsv
